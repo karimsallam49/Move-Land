@@ -1,0 +1,12 @@
+.main-container{
+
+    background-color:#10141F;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    padding:1.5rem;
+    gap: 1rem;
+    overflow-y:"hidden";
+    height:100vh
+}
+

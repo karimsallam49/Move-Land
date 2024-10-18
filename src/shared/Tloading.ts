@@ -1,0 +1,1 @@
+export type Tloading= "idle"|"success"|"pending"|"faild"

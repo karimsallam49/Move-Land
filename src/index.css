@@ -1,0 +1,23 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html ::-webkit-scrollbar{
+    
+    width: 1rem;
+    
+}
+
+html ::-webkit-scrollbar-track{
+    
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    
+    background-color:#9ea4b6;
+        border-radius: 5rem;
+}

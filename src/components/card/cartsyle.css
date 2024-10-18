@@ -1,0 +1,99 @@
+.card-container{
+
+width: 250px;
+height: 250px;
+position: relative;
+background-color: aliceblue;
+border: solid 1px white;
+overflow: hidden;
+cursor: pointer;
+
+
+
+}
+
+.card-container:hover{
+
+    .over-view{
+
+        bottom: 0;
+    }
+}
+
+.card-img{
+
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+}
+
+.bookmark{
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background:rgba(46, 38, 38, 0.9);
+    border-radius: 40%;
+    img{
+        width: 20px;
+        object-fit: cover;
+    }
+
+}
+
+.rate{
+
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 5%;
+    background-color: rgb(255, 102, 0);
+    transform:skewY(-40deg);
+    z-index: 100;
+    p{
+        font-weight: 800;
+    }
+   
+   
+
+}
+
+.card-title{
+
+    color:white;
+    z-index: 1000;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+
+    
+}
+
+.over-view{
+
+    position: absolute;
+    z-index: 1000;
+    background:rgba(8, 6, 6, 0.9);
+    height: 80%;
+    bottom: -100%;
+    transition: .3s;
+    color: aliceblue;
+}
