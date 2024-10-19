@@ -1,6 +1,6 @@
 .main-container{
 
-    background-color:#10141F;
+    background-color:black;
     display:flex;
     flex-direction:row;
     color:white;
@@ -10,3 +10,12 @@
     height:100vh
 }
 
+.footer{
+
+    text-align: center;
+    padding: 10px 0;
+    border-top:solid 1px rgb(255, 30, 0);
+    width: 90%;
+    margin-top: 1rem;
+   
+}

@@ -4,10 +4,9 @@ import { Trecords } from "../../shared/Trecords"
 import { imageUrl } from "../../shared/imageurl"
 import { useAppDispatch } from "../../store/hooks"
 import  { addtobookmark, deletefrombookmark } from "../../store/Bookmark/bookmarkSlice"
-import"./cartsyle.css"
 import actgetbookmark from "../../store/Bookmark/actGetbookmarks"
 import { Link } from "react-router-dom"
-import { useLocation } from "react-router-dom"
+import"./cartsyle.css"
 
 
 type carditemprops=Trecords
@@ -16,7 +15,6 @@ type carditemprops=Trecords
 const Carditem = ({ original_title,id,backdrop_path,overview,vote_average,bookmarked}:
   
   carditemprops) => {
-    const{pathname}=useLocation()
     
     const dispatch=useAppDispatch()
   return (
@@ -50,7 +48,7 @@ const Carditem = ({ original_title,id,backdrop_path,overview,vote_average,bookma
         }}/>
       }
       </div>
-        <Link to={pathname==="/Movies"? `Showdetails/${id}`:`Movies/Showdetails/${id}`}>  
+        <Link to={`/Showdetails/${id}`}>  
         <div className="over-view">
         
 

@@ -46,7 +46,7 @@ import Showdetails from "../pages/Showdetails"
             },
             {
 
-                path:"Movies/Showdetails/:MovieId",
+                path:"Showdetails/:MovieId",
                 element:<Showdetails/>
             }
             

@@ -22,11 +22,17 @@ const Thirdsection = () => {
       
     }))    
     return (
-      <Container>
-          <h3>most viewd</h3>
-  
+
+      <div className="Third-section">
+
+        <h3>Last Updated</h3>
+        <Container>
+
           <Gridlist record={renderresults} renderitem={(record)=><Carditem{...record}/>}></Gridlist>
       </Container>
+      </div>
+
+  
       
     )
   }

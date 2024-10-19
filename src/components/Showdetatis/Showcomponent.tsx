@@ -13,11 +13,11 @@ const Showcomponent = ({ original_title,backdrop_path,overview,vote_average}:sho
 
     
     <div className="show-container">
+        <h1>{original_title}</h1>
       <Row>
         <Col  xs={815} md={4} className="mb-4">
       <div className="tite">
 
-        <h1>{original_title}</h1>
       </div>
       <div className="detais">
 
@@ -27,7 +27,7 @@ const Showcomponent = ({ original_title,backdrop_path,overview,vote_average}:sho
       </div>
 
       </Col>
-      <Col xs={15} md={8} >
+      <Col xs={20} md={8} >
       <div className="show-detais">
         <p className="vote">{vote_average}</p>
         <p>{overview}</p>

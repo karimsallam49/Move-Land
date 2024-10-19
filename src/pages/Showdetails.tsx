@@ -5,8 +5,9 @@ import actGetmovies from "../store/movies/actGetMovies"
 import { cleanup } from "../store/movies/MoviesSlice"
 import { Container } from "react-bootstrap"
 import Showcomponent from "../components/Showdetatis/Showcomponent"
+import { memo } from "react"
 
-const Showdetails = () => {
+const Showdetails = memo(() => {
   const dispatch=useAppDispatch()
     useEffect(()=>{
   
@@ -22,6 +23,7 @@ const Showdetails = () => {
     const results=record.results
 
     const renderitems=results.filter((el)=>el.id==Number(movieid))
+    console.log(renderitems)
 
     const render=renderitems.map((records)=>(
 <Showcomponent {...records}/>
@@ -36,6 +38,5 @@ const Showdetails = () => {
     </Container>
   
   )
-}
-
+});
 export default Showdetails

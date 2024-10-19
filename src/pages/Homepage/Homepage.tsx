@@ -6,8 +6,8 @@ import Searchbare from "./searchbare"
 const Homepage = () => {
   return (
     <div>
-      
       <Searchbare/>
+      
       <Firstsection/>
       <Secondsection/>
       <Thirdsection/>

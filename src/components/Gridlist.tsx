@@ -13,7 +13,7 @@ type Gridlistprops={
 const Gridlist = ({record,renderitem}:Gridlistprops) => {
   const renderitems=record.length >0 ?record.map((item)=>(
     <Col
-    xs={8} md={3}
+    xs={15} md={3}
     key={item.id}
     className="d-flex justfiy-content-center- mb-5 mt-2"
     >

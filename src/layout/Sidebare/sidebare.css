@@ -1,6 +1,7 @@
 .sidebarecontainer{
 
     background-color:#10142F;
+    background-color:rgb(29, 28, 28);
     display:flex;
     flex-direction:column; 
     color:white;
@@ -8,7 +9,7 @@
     border-radius:2px;
     align-items:center;
     justify-content:center;
-    width: 30%;
+    width: 20%;
     height: 90%;
     border-radius: 20px;
 }
@@ -31,8 +32,16 @@
 
 .active{
 
-    background-color:#9ea4b6;
+    background-color:rgb(255, 30, 0);
     position: relative;
 
 }
 
+
+@media screen and (max-width:800px){
+
+    .item-name{
+
+        opacity: 0;
+    }
+}

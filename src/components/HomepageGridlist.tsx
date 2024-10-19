@@ -18,12 +18,12 @@ const Gridlist = ({record,renderitem}:Gridlistprops) => {
     grabCursor={true}
     modules={[FreeMode]}
     className='myswiper'
-    slidesPerView={5}
-    spaceBetween={200}
+    slidesPerView={"auto"}
+    spaceBetween={10}
    >
 
   {record.length >0 ?record.map((item)=>(
-    <SwiperSlide>
+    <SwiperSlide style={{width:"200px"}}>
    {renderitem(item)}
    
    

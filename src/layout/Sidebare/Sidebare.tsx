@@ -61,8 +61,12 @@ const Sidebare = () => {
         
 
         >
-            <img src={items.icone} alt="" width={"30px"} />
+            <img src={items.icone} alt="" width={""} />
+
+            <p  className="item-name"style={{fontSize:"80%"}}>
+
             {items.name}
+            </p>
         </Link>
     ))}
 

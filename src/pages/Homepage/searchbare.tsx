@@ -31,7 +31,7 @@ const Searchbare = () => {
           Setsearch(event.target.value)
         }}
         type="text" placeholder="seacrh for movie or tvseries" className="inputstyle"/>
-<button >
+<button style={{border:"none",backgroundColor:"black"}} >
 
        <img 
        className="seacrhicone"
